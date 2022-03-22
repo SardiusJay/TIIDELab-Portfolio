@@ -1,0 +1,237 @@
+/*importing font family-poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+/*reset browser default*/
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+
+
+/*HEADER SECTION*/
+
+header{
+    background-image: url(https://images.unsplash.com/photo-1594202304180-f25d9c992442?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGxhcHRvcCUyMHNjcmVlbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-size:  cover;
+    background-position: 100%;
+    height: 80vh;
+    position: relative;
+    opacity: 2;
+}
+.header-overlay{
+    background-color: rgba(199, 69, 69, 0.3);
+    position: absolute;
+    top: 0;
+    height: 80vh;
+    opacity: 0;
+    width: 100%;
+}
+.logo {
+    font-size:30px;
+    font-weight: bold;
+    color: orange;
+}
+
+.nav-link.active{
+    color:orange ;
+}
+/*a.nav-link.{
+    color:blue ;
+    justify-content: space-between;
+}*/
+
+.header-content-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+.full-name{
+    color: white;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+p{
+    color: black;
+    font-size: 12px;
+    font-weight: light;
+}
+/*NAVLINKS*/
+
+.nav-link{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none; /*remove underline */
+    transition:0.5s;
+    padding: 10px;
+    margin: 10px;
+}
+.hero-btn-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 10px;
+}
+.profile-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+/*icons*/
+.hero-media-wrapper svg{
+width: 20px;
+height: 20px;
+fill: white;
+border: 1px solid white;
+border-radius: 50%;
+padding: 4px;
+margin: 10px;
+transition: 0.5s;
+}
+.btn{
+    background-color:orange;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 26px;
+    padding: 10px 14px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: space-between;
+}
+.btn:hover{
+    opacity:0.8;
+}
+.download-btn{
+    background-color: white;
+    color: orange;
+}
+.download-btn:hover{
+    opacity:0.8;
+    background-color: white;
+    color: orange;
+}
+/*MAIN BODY CONTENT*/
+
+
+main{
+    margin-top: 10px;
+}
+
+.section h2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: orange;
+    margin-bottom: 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.about-me{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-brief{
+    text-align: center;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+/*CURRENTLY WORKING AT*/
+.place-of-work-section{
+    margin: 40px 0;
+    background-color: orange;
+    padding: 10px;
+    min-height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.place-of-work-section h2{
+    color: white;
+}
+.place-of-work-wrapper{
+    text-align: center;
+    margin: 40px 0;
+}
+.place-of-work-pill{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 26px;
+    font-size: 14px;
+    transition: 1.5;
+}
+
+/*PROJECT-CARD*/
+.project-card-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 2rem;
+}
+
+.project-card{
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+
+}
+.project-card img{
+    width: 100%;
+    height: 200px;
+}
+
+.card-content{
+    width: 300px;
+    padding: 2px 16px;
+}
+.project-title{
+    color: orange;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.project-brief{
+    font-size: 14px;
+}
+
+.project-links{
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}
+
+.project-links svg {
+    width: 20px;
+    height: 20px;
+    fill: orange;
+
+}
