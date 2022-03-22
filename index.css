@@ -235,3 +235,24 @@ main{
     fill: orange;
 
 }
+
+/*STACK SECTION*/
+
+.stack-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.stack-progress::-webkit-progress-bar{
+    background-color: orange;
+    border-radius: 100px;
+}
+
+.stack-progress::-webkit-progress-value{
+    background-color: orange;
+    border-radius: 100px;
+}
